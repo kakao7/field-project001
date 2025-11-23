@@ -13,5 +13,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakao7/field-project001.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kakao7/field-project001/issues"
+  },
+  "homepage": "https://github.com/kakao7/field-project001#readme"
 }
