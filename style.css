@@ -1,0 +1,304 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1a1a1a;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffb800;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad;
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav img.logo {
+    height: 50px;
+}
+
+nav div a {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav div a:hover {
+    color: #ffb800;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    height: 250px;
+    background: url("images/hero-bg.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* ===========================
+   FORM CONTAINER (Login/Register/Contact)
+=========================== */
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #004aad;
+    margin-bottom: 25px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #004aad;
+    box-shadow: 0 0 5px rgba(0, 74, 173, 0.3);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #ffb800;
+    color: #1a1a1a;
+}
+
+/* ===========================
+   CARDS (Topics/Popular sections)
+=========================== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+    transition: 0.35s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   TESTIMONIALS
+=========================== */
+.testimonials {
+    padding: 40px;
+    background: #e3f0ff;
+}
+
+.test-box {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 12px;
+    max-width: 850px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+.test-box strong {
+    color: #004aad;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer img {
+    width: 35px;
+    margin: 0 8px;
+    vertical-align: middle;
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(90%);
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    filter: brightness(120%);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media screen and (max-width: 500px) {
+    .form-container {
+        margin: 40px 20px;
+        padding: 20px;
+    }
+
+    nav div a {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* ===============================
+   Step-by-Step Topic Instructions
+   =============================== */
+
+.email-step {
+    background: #f0f8ff;       /* light, soft blue for readability */
+    padding: 20px 25px;        /* space inside the box */
+    border-radius: 12px;       /* rounded corners */
+    margin-top: 20px;          /* space between steps */
+    line-height: 1.7;          /* easy-to-read line height */
+    max-width: 750px;          /* prevents text from stretching too wide */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.email-step:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.email-step strong {
+    display: block;
+    color: #004aad;            /* highlight step title */
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.email-step ol {
+    padding-left: 25px;        /* indent list items */
+    margin: 0;
+}
+
+.email-step li {
+    margin-bottom: 12px;       /* space between points */
+    font-size: 17px;
+}
+
+.step-icon {
+    margin-right: 10px;        /* space between icon and text */
+    font-size: 20px;           /* slightly larger icon */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .email-step {
+        padding: 15px 20px;
+        max-width: 100%;
+    }
+
+    .email-step strong {
+        font-size: 16px;
+    }
+
+    .email-step li {
+        font-size: 16px;
+    }
+
+    .step-icon {
+        font-size: 18px;
+    }
+}
+
